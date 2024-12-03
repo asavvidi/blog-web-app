@@ -13,21 +13,14 @@
     <div class="read-blog-container">
       <h1 class="read-blog-h1">Read Blog</h1>
       <div class="blog-container">
+        <%content.forEach((post)=>{ %>
+
         <div class="blog">
           <div class="card-header">
-            <h4>
-              War latest: Putin's plane 'involved in illegally deporting
-              Ukrainian children'
-            </h4>
+            <h4><%= post.title %></h4>
           </div>
           <div class="card-content">
-            <p>
-              The new NATO chief has warned Vladimir Putin is ramping up
-              "reckless actions" and is using Ukraine as a "testing ground" for
-              missiles. Meanwhile, US-backed research alleges the Kremlin
-              leader's presidential plane has been involved in deporting
-              Ukrainian children to Russia.
-            </p>
+            <p><%= post.description %></p>
           </div>
           <div class="card-footer">
             <p>
@@ -37,9 +30,7 @@
             <a href="#">see more</a>
           </div>
         </div>
-        <div class="blog"></div>
-        <div class="blog"></div>
-        <div class="blog"></div>
+        <% }) %>
       </div>
     </div>
 
