@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -123,4 +124,75 @@ body {
   margin: 0 auto;
   font-size: 1rem;
   padding: 1rem 2rem;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 10%;
+}
+
+.about-me-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.personal-info {
+  overflow: hidden;
+}
+
+.personal-info img {
+  float: left;
+  margin-right: 1.5rem;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.personal-info p {
+  line-height: 1.6;
+}
+
+.read-blog-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5%;
+  gap: 1.5rem;
+}
+
+.read-blog-h1 {
+  font-size: 3rem;
+}
+
+.blog-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 20px;
+  border: 2px solid #d9d9d9;
+}
+
+.blog {
+  width: 400px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.card-header > h4 {
+  text-decoration: underline;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
